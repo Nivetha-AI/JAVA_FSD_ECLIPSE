@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="res1" class="com.hexa.Spring1.com.hex.spring.Result">
+
+		<property name="Marks" value="100" />
+		<property name="Remarks" value="Pass" />
+
+	</bean>
+
+	<bean id="res2" class="com.hexa.Spring1.com.hex.spring.Result">
+
+		<property name="Marks" value="20" />
+		<property name="Remarks" value="Fail" />
+
+	</bean>
+
+	<bean id="res3" class="com.hexa.Spring1.com.hex.spring.Result">
+
+		<property name="Marks" value="10" />
+		<property name="Remarks" value="Fail" />
+
+	</bean>
+	<bean id="res4" class="com.hexa.Spring1.com.hex.spring.Result">
+
+		<property name="Marks" value="95" />
+		<property name="Remarks" value="Pass" />
+
+	</bean>
+
+	<bean id="Stud1" class="com.hexa.Spring1.com.hex.spring.Student">
+
+		<property name="Roll" value="101" />
+		<property name="Name" value="Nivetha" />
+		<property name="Fee" value="2000.0" />
+		<property name="res" ref="res1" />
+	</bean>
+
+
+	<bean id="Stud2" class="com.hexa.Spring1.com.hex.spring.Student">
+
+		<property name="Roll" value="102" />
+		<property name="Name" value="swetha" />
+		<property name="Fee" value="30000.0" />
+		<property name="res" ref="res2" />
+	</bean>
+
+	<bean id="Stud3" class="com.hexa.Spring1.com.hex.spring.Student">
+
+		<property name="Roll" value="103" />
+		<property name="Name" value="Priya" />
+		<property name="Fee" value="40000" />
+		<property name="res" ref="res3" />
+	</bean>
+
+	<bean id="Stud4" class="com.hexa.Spring1.com.hex.spring.Student">
+
+		<property name="Roll" value="104" />
+		<property name="Name" value="Prethi" />
+		<property name="Fee" value="50000" />
+		<property name="res" ref="res4" />
+	</bean>
+   <bean id="book1" class="com.hexa.Spring1.com.hex.spring.Book">
+
+		<constructor-arg index="0" value="101"/>
+		<constructor-arg index="1" value="DSA"/>
+		<constructor-arg index="2" value="13000"/>
+	</bean>
+
+  <bean id="book2" class="com.hexa.Spring1.com.hex.spring.Book">
+
+		<constructor-arg index="0" value="102"/>
+		<constructor-arg index="1" value="C++"/>
+		<constructor-arg index="2" value="1400"/>
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

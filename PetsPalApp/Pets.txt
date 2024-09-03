@@ -1,0 +1,3 @@
+drago,3,bulldog
+swiny,2,cat
+peter,1,mouse

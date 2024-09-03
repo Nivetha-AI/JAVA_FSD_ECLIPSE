@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean id="prod1" class="com.hexa.Spring1.com.hexa.spring1.Product">
+
+		<property name="name" value="AC" />
+		<property name="price" value="100000" />
+
+		<property name="car" ref="cart1" />
+	</bean>
+	<bean id="prod2" class="com.hexa.Spring1.com.hexa.spring1.Product">
+
+		<property name="name" value="Fan" />
+		<property name="price" value="1000" />
+
+		<property name="car" ref="cart2" />
+	</bean>
+	<bean id="prod3" class="com.hexa.Spring1.com.hexa.spring1.Product">
+
+		<property name="name" value="Fridge" />
+		<property name="price" value="20000" />
+
+		<property name="car" ref="cart3" />
+	</bean>
+
+	<bean id="cart1" class="com.hexa.Spring1.com.hexa.spring1.Cart">
+
+		<property name="qty" value="4" />
+		<property name="bill" value="100000" />
+
+
+	</bean>
+<bean id="cart2" class="com.hexa.Spring1.com.hexa.spring1.Cart">
+
+		<property name="qty" value="5" />
+		<property name="bill" value="2000000" />
+
+
+	</bean>
+<bean id="cart3" class="com.hexa.Spring1.com.hexa.spring1.Cart">
+
+		<property name="qty" value="6" />
+		<property name="bill" value="400000" />
+
+
+	</bean>
+
+
+</beans>
